@@ -1,0 +1,9 @@
+.AnimalCard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.animal-img {
+  width: 50%;
+}
