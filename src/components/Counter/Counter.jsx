@@ -10,7 +10,7 @@ class Counter extends Component {
           width="50px"
           alt="emoji"
         />
-        <h2>0</h2>
+        <h2>{this.props.counter}</h2>
       </div>
     );
   }

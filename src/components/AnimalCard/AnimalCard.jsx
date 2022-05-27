@@ -1,19 +1,21 @@
 import React, { Component } from "react";
-import "./AnimalCard.css";
 
-import animals from "../../animals";
+import "./AnimalCard.css";
 
 class AnimalCard extends Component {
   render() {
     return (
-      <div className="AnimalCard-container">
-        <h2>{animals[0].name}</h2>
-        <img
-          className="animal-img"
-          src={animals[0].img}
-          alt={animals[0].name}
-        />
-      </div>
+      <>
+        {this.props.animal && (
+          <div className="AnimalCard-container">
+            <h2>{this.props.animal.name}</h2>
+            <div
+              className="animal-img"
+              style={{ backgroundImage: `url(${this.props.animal.img})` }}
+            ></div>
+          </div>
+        )}
+      </>
     );
   }
 }

@@ -3,7 +3,12 @@ import "./Button.css";
 
 class Button extends Component {
   render() {
-    return <div className={`btn ${this.props.type}`}></div>;
+    return (
+      <div
+        onClick={this.props.onClick}
+        className={`btn ${this.props.type}`}
+      ></div>
+    );
   }
 }
 
